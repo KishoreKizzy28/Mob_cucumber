@@ -56,7 +56,12 @@ Scenario: Order Review Page
 When user Click the Place Order button
 Then it Navigates to Success Page
 
- 
+Scenario: RestAssured
 
+Given user Enter the uri
+When user Get the response code
+And user Get the response status Line
+And user Get the response Aspretty
+Then user Validate the response Code
 
 
